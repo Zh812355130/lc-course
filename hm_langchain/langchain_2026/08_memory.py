@@ -41,7 +41,6 @@ def demo_01():
 
 
 def demo_02():
-    # 39.102.72.17  zh@123
     with RedisSaver.from_conn_string("xxx") as checkpointer:
         checkpointer.setup()
         agent = create_agent(
